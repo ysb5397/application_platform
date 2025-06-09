@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+    all:unset;
+}
+
+/* Layout */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.back-btn {
+  margin-bottom: 20px;
+  color: #444;
+  cursor: pointer;
+}
+
+.profile-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.profile-img {
+  border-radius: 50;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.resume-count {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.badge {
+  background-color: #5f5cfc;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.register-btn {
+  
+  background-color: #5f5cfc;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.resume-card {
+  background-color: #f9f9f9;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit-btn {
+  background-color: #e0e5f5;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.resume-subtitle {
+  margin: 8px 0;
+  color: #888;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  background-color: #dee3f4;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 12px;
+  color: #777;
+}
