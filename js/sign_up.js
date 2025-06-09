@@ -9,7 +9,7 @@ function checkPw() {
     let checkCondition;
     if (pw.length === 0) {
         pwContainer.classList.remove('warn', 'caution', 'safe');
-    } else if ( pw.length < 5) {
+    } else if (pw.length < 5) {
         checkCondition = pwContainer.classList.contains('warn');
         if (!checkCondition) {
             pwContainer.classList.remove('caution', 'safe');
@@ -44,10 +44,11 @@ function checkId() {
     let id = document.getElementById("sign_up_id").value;
     console.log(id);
 
-    let arr = []; 
-    arr = localStorage.getItem('arr');
+    doc = localStorage.getItem(id);
+    doc = JSON.parse(doc);
+    console.log(doc);
 
-    if (arr === null) {
+    if (doc === null) {
         if (id == '') {
             document.getElementById('id_null').style.display = 'flex';
             console.error('아이디값 누락 오류');
@@ -57,20 +58,12 @@ function checkId() {
             isIdOkay = true;
         }
     } else {
-        for (let i = 0; i < arr.length; i++) {
-            doc = arr[i];
-            
-            if (id === doc.id) {
-                document.getElementById('duplicate').style.display = 'flex';
-                console.error('중복된 아이디 오류');
-            } else if (id === '') {
-                document.getElementById('id_null').style.display = 'flex';
-                console.error('아이디값 누락 오류');
-            } else {
-                document.getElementById('success').style.display = 'flex';
-                console.log('사용 가능한 아이디 입력됨 ✔');
-                isIdOkay = true;
-            }
+        if (id === doc.id) {
+            document.getElementById('duplicate').style.display = 'flex';
+            console.error('중복된 아이디 오류');
+        } else if (id === '') {
+            document.getElementById('id_null').style.display = 'flex';
+            console.error('아이디값 누락 오류');
         }
     }
 }
@@ -124,13 +117,14 @@ function signUp() {
         doc = {
             id: id,
             name: name,
-            pw: pw,
-            pwCheck: pwCheck
+            pw: pw
         }
         console.log(doc);
 
-        arr.push(doc);
-        localStorage.setItem('arr', arr);
-        console.log(arr);
+        doc = JSON.stringify(doc);
+        localStorage.setItem(id, doc);
+
+        alert('로그인 완료!');
+        window.location.replace = "login.html";
     }
 }
