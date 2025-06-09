@@ -80,12 +80,9 @@ header nav a {
 
 
 
-
-
-
 footer {
     display: flex;
-    height: 20vh;
+    height: 25vh;
     background-color: rgb(240, 238, 238);
     text-align: center;
     align-items: center;
@@ -94,3 +91,7 @@ footer {
     font-weight: bold;
 }
 
+body {
+    margin: 0px;
+    
+}
