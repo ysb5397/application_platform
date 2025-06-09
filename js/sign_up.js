@@ -124,7 +124,7 @@ function signUp() {
         doc = JSON.stringify(doc);
         localStorage.setItem(id, doc);
 
-        alert('로그인 완료!');
+        alert('회원가입 완료!');
         window.location.replace = "login.html";
     }
 }
