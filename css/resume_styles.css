@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+/* a 링크 태그 스타일 초기화 */
+
+/* a 태그에 모든 요서를 초기화 한다. */
+a {
+  all: unset;
+}
+
+a:link {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+a:active {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem 1rem;
+    overflow: hidden;
+    border: 0.5px solid #EAEAEA;
+}
+
+
+.head--container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head--brand--left {
+  margin: 50px 0;
+  font-size: 2.5rem;
+}
+
+
+.heade--brand--right {
+    padding: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px;
+}
+
+.head--container .head--brand a:hover {
+  color: #2186c3;
+  cursor: pointer;
+}
+
+section {
+  width: 100vw;
+  height: 80vh;
+  background-color: #f6f6f6;
+}
+
+.main {
+  
+}
+
+.main--container {
+  width: 70vw;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+
+}
