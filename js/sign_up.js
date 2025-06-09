@@ -125,6 +125,8 @@ function signUp() {
         localStorage.setItem(id, doc);
 
         alert('회원가입 완료!');
-        window.location.replace = "login.html";
+
+        // 해당 파일 또는 링크로 이동 하는 코드
+        window.location.href = "login.html";
     }
 }
