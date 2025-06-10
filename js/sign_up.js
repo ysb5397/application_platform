@@ -3,7 +3,7 @@ window.onload = function() {
 }
 
 function checkPw() {
-    let pw = document.getElementById('sign_up_pw').value;
+    let pw = document.getElementById('sign--up--pw').value;
     let pwContainer = document.querySelector('.input--pw--container');
 
     let checkCondition;
@@ -33,15 +33,15 @@ function checkPw() {
 let doc;
 let isIdOkay = false;
 function checkId() {
-    document.getElementById('id_null').style.display = 'none';
+    document.getElementById('id--null').style.display = 'none';
     document.getElementById('duplicate').style.display = 'none';
     document.getElementById('success').style.display = 'none';
-    document.getElementById('name_null').style.display = 'none';
-    document.getElementById('pw_null').style.display = 'none';
-    document.getElementById('repeat_pw_null').style.display = 'none';
-    document.getElementById('pw_not_same').style.display = 'none';
+    document.getElementById('name--null').style.display = 'none';
+    document.getElementById('pw--null').style.display = 'none';
+    document.getElementById('repeat--pw--null').style.display = 'none';
+    document.getElementById('pw--not--same').style.display = 'none';
 
-    let id = document.getElementById("sign_up_id").value;
+    let id = document.getElementById("sign--up--id").value;
     console.log(id);
 
     doc = localStorage.getItem(id);
@@ -49,8 +49,8 @@ function checkId() {
     console.log(doc);
 
     if (doc === null) {
-        if (id == '') {
-            document.getElementById('id_null').style.display = 'flex';
+        if (id === '') {
+            document.getElementById('id--null').style.display = 'flex';
             console.error('아이디값 누락 오류');
         } else {
             document.getElementById('success').style.display = 'flex';
@@ -62,7 +62,7 @@ function checkId() {
             document.getElementById('duplicate').style.display = 'flex';
             console.error('중복된 아이디 오류');
         } else if (id === '') {
-            document.getElementById('id_null').style.display = 'flex';
+            document.getElementById('id--null').style.display = 'flex';
             console.error('아이디값 누락 오류');
         }
     }
@@ -70,25 +70,25 @@ function checkId() {
 
 let isPwOkay = false;
 function signUp() {
-    document.getElementById('id_null').style.display = 'none';
+    document.getElementById('id--null').style.display = 'none';
     document.getElementById('duplicate').style.display = 'none';
     document.getElementById('success').style.display = 'none';
-    document.getElementById('name_null').style.display = 'none';
-    document.getElementById('pw_null').style.display = 'none';
-    document.getElementById('repeat_pw_null').style.display = 'none';
-    document.getElementById('pw_not_same').style.display = 'none';
+    document.getElementById('name--null').style.display = 'none';
+    document.getElementById('pw--null').style.display = 'none';
+    document.getElementById('repeat--pw--null').style.display = 'none';
+    document.getElementById('pw--not--same').style.display = 'none';
 
-    let id = document.getElementById('sign_up_id').value;
+    let id = document.getElementById('sign--up--id').value;
     if (id) {
         isIdOkay = true;
     } else {
         isIdOkay = false;
     }
 
-    let name = document.getElementById('sign_up_name').value;
+    let name = document.getElementById('sign--up--name').value;
     console.log(name);
 
-    let pw = document.getElementById('sign_up_pw').value;
+    let pw = document.getElementById('sign--up--pw').value;
     
     if (pw) {
         isPwOkay = true;
@@ -96,22 +96,22 @@ function signUp() {
         isPwOkay = false;
     }
 
-    let pwCheck = document.getElementById('repeat_pw').value;
+    let pwCheck = document.getElementById('repeat--pw').value;
 
     if (!isIdOkay) {
-        document.getElementById('id_null').style.display = 'flex';
+        document.getElementById('id--null').style.display = 'flex';
         console.error('아이디값 누락 오류');
     } else if (name === '') {
-        document.getElementById('name_null').style.display = 'flex';
+        document.getElementById('name--null').style.display = 'flex';
         console.error('이름 비어있음');
     } else if (!isPwOkay) {
-        document.getElementById('pw_null').style.display = 'flex';
+        document.getElementById('pw--null').style.display = 'flex';
         console.error('비밀번호값 누락 오류');
     } else if (pwCheck === '') {
-        document.getElementById('repeat_pw_null').style.display = 'flex';
+        document.getElementById('repeat--pw--null').style.display = 'flex';
         console.error('비밀번호 재확인 누락');
     } else if (pw !== pwCheck) {
-        document.getElementById('pw_not_same').style.display = 'flex';
+        document.getElementById('pw--not--same').style.display = 'flex';
         console.error('비밀번호가 일치하지 않습니다.');
     } else {
         doc = {
