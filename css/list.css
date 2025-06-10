@@ -27,6 +27,7 @@ a:active {
 }
 
 a:hover {
+  cursor: pointer;
   text-decoration: none;
   color: #3f464d;
 }
@@ -93,6 +94,18 @@ section {
   gap: 10px;
 }
 
+.skill:nth-child(1) {
+  width: 7%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 0.5rem 0.1rem;
+  min-width: 100px;
+}
+
 .skill {
   width: 5%;
   height: 100%;
@@ -111,6 +124,7 @@ section {
   width: 100px;
   color: #545e6f;
   text-align: center;
+  cursor: pointer;
 }
 
 ul {
@@ -192,6 +206,7 @@ ul {
 }
 
 #icon:hover {
+  cursor: pointer;
   background-color: rgb(83, 115, 218);
   color: white;
 }

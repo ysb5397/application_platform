@@ -22,5 +22,6 @@ function logIn() {
     } else {
         alert("로그인 성공");
         console.log("로그인 성공");
+        window.location.href = "list.html";
     }   
 }
