@@ -25,7 +25,9 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     padding: 100px;
+    height: 65.5vh;
 }
 
 .sign--up--main {
