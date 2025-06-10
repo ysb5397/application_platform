@@ -32,104 +32,158 @@
       </div>
 
       <section class="main">
-        <div class="main">
+        <div class="main--title">
           <i class="fa-solid fa-left-long"></i>
           <p>이력서 등록</p>
         </div>
         <div class="main--container">
-          <div class="resume">
-            <div>
-              <p>홍길동 이력서_2401029</p>
-            </div>
+          <div class="resume--header">
+            <p>홍길동 이력서_2401029</p>
           </div>
           <div>
             <!-- 여기는 프로필 영역 -->
-            <div>
-              <div>
-                <img src="" alt="">
+            <div class="profile--header">
+              <div class="profile--picture">
+                <img src="../img/profile_picture.png" alt="">
               </div>
-              <div>
+              <div class="profile--info--container">
                 <div>
-                  <p>홍길동</p>
+                  <p id="name">홍길동</p>
                 </div>
-                <div>
+                <div class="input--email--container">
                   <!-- 이메일 영역 -->
                    <i></i>
-                   <input type="text" placeholder="hong@example.com">
+                   <input type="text" placeholder="hong@example.com" id="input--email">
                 </div>
-                <div>
-                  <div>
+                <div class="birth--call--number--container">
+                  <div class="birthday">
                     <i></i>
                     <input type="text" placeholder="0000년생">
                   </div>
-                  <div>
+                  <div class="phone--number">
                     <i></i>
                     <input type="text" placeholder="010xxxx4609" minlength="11" maxlength="12">
                   </div>
                 </div>
                 <div>
                   <i></i>
-                  <input type="text" placeholder="부산광역시">
+                  <input type="text" placeholder="부산광역시" id="input--address">
                 </div>
               </div>
             </div>
             <!-- 여기는 개발 직무 영역 -->
-            <div>
-              <div>
+            <div class="job--container">
+              <div class="job--container--title">
                 <p>개발 직무</p>
               </div>
-              <div>
-                <ul>
-                  <li>서버 백엔드 개발자</li>
-                  <li>프론트 엔드 개발자</li>
-                  <li>웹 풀스택 개발자</li>
-                  <li>IOS 개발자</li>
-                  <li>크로스 플랫폼 앱 개발자</li>
-                  <li>안드로이드 개발자</li>
+              <div class="job--tag--list--container">
+                <ul class="job--tag--list">
+                  <div class="job--tag--container">
+                    <input type="checkbox">
+                    <li class="job--tag">서버 백엔드 개발자</li>
+                  </div>
+                  <div class="job--tag--container">
+                    <input type="checkbox">
+                    <li class="job--tag">프론트 엔드 개발자</li>
+                  </div>
+                  <div class="job--tag--container">
+                    <input type="checkbox">
+                    <li class="job--tag">웹 풀스택 개발자</li>
+                  </div>
+                  <div class="job--tag--container">
+                    <input type="checkbox">
+                    <li class="job--tag">IOS 개발자</li>
+                  </div>
+                  <div class="job--tag--container">
+                    <input type="checkbox">
+                    <li class="job--tag">크로스 플랫폼 앱 개발자</li>
+                  </div>
+                  <div class="job--tag--container">
+                    <input type="checkbox">
+                    <li class="job--tag">안드로이드 개발자</li>
+                  </div>
                 </ul>
               </div>
             </div>
             <!-- 여기는 기술 스택 영역 -->
-            <div>
-              <div>
+            <div class="skill--container">
+              <div class="skill--container--title">
                 <p>기술스택(업무 툴/스킬)</p>
               </div>
-              <div>
-                <ul>
-                  <li>Java</li>
-                  <li>JavaScript</li>
-                  <li>Spring</li>
-                  <li>HTML</li>
-                  <li>jQuery</li>
-                  <li>MySQL</li>
-                  <li>React</li>
-                  <li>jSP</li>
-                  <li>Vue.js</li>
-                  <li>Oracle</li>
+              <div class="skill--tag--list--container">
+                <ul class="skill--tag--list">
+                  <div class="skill--tag--container">
+                    <input type="checkbox">
+                    <li class="skill--tag">Java</li>
+                  </div>
+                  <div class="skill--tag--container">
+                    <input type="checkbox">
+                    <li class="skill--tag">JavaScript</li>
+                  </div>
+                  <div class="skill--tag--container">
+                    <input type="checkbox">
+                    <li class="skill--tag">Spring</li>
+                  </div>
+                  <div class="skill--tag--container">
+                    <input type="checkbox">
+                    <li class="skill--tag">HTML</li>
+                  </div>
+                  <div class="skill--tag--container">
+                    <input type="checkbox">
+                    <li class="skill--tag">jQuery</li>
+                  </div>
+                  <div class="skill--tag--container">
+                    <input type="checkbox">
+                    <li class="skill--tag">MySQL</li>
+                  </div>
+                  <div class="skill--tag--container">
+                    <input type="checkbox">
+                    <li class="skill--tag">React</li>
+                  </div>
+                  <div class="skill--tag--container">
+                    <input type="checkbox">
+                    <li class="skill--tag">jSP</li>
+                  </div>
+                  <div class="skill--tag--container">
+                    <input type="checkbox">
+                    <li class="skill--tag">Vue.js</li>
+                  </div>
+                  <div class="skill--tag--container">
+                    <input type="checkbox">
+                    <li class="skill--tag">Oracle</li>
+                  </div>
                 </ul>
               </div>
             </div>
             <!-- 여기는 경력 영역 -->
-            <div>
-              <div>
+            <div class="career--container">
+              <div class="career--container--title">
                 <p>경력</p>
               </div>
-              <div>
-                <ul>
-                  <li>신입</li>
-                  <li>경력</li>
+              <div class="career--tag--list--container">
+                <ul class="career--tag--list">
+                  <div class="career--tag--container">
+                    <input type="radio" name="career">
+                    <li class="career--tag">신입</li>
+                  </div>
+                  <div class="career--tag--container">
+                    <input type="radio" name="career">
+                    <li class="career--tag">경력</li>
+                  </div>
                 </ul>
               </div>
             </div>
             <!-- 여기는 저장하기 버튼이 들어가는 곳 -->
-            <div>
-              <button>저장하기</button>
+            <div class="save--btn--container">
+              <button id="save--btn">저장하기</button>
             </div>
           </div>
         </div>
       </section>
       <footer>
-        <div>Copyright(c) 홍길동 All rights reserved.</div>
+        <div class="copyright--container">
+          <p class="copyright--text">Copyright(c) 홍길동 All rights reserved.</p>
+        </div>
       </footer>
     </header>
 
