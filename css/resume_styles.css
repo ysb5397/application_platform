@@ -72,21 +72,41 @@ header {
   cursor: pointer;
 }
 
-section {
-  width: 100vw;
-  height: 80vh;
+.main {
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f6f6f6;
 }
 
-.main {
+
+
+.main--container {
+  width: 800px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  background-position: 40%;
   
 }
 
-.main--container {
-  width: 70vw;
-  height: 80vh;
+.resume--list {
+  width: 500px;
+  height: 600px;
+  background-color: blue;
+  padding: 50px;
+  margin: 50px;
   display: flex;
-  justify-content: space-between;
-  background-color: #fff;
-
+  justify-content: center;
+  align-items: center;
 }
+
+
+
