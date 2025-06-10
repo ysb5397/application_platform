@@ -63,7 +63,7 @@ section {
     border-bottom: 1px solid #e3e3e3;
 }
 
-#sign_up_id {
+#sign--up--id {
     margin-left: 10px;
     font-size: medium;
     border: none;
@@ -73,7 +73,7 @@ section {
     margin-left: 10px;
 }
 
-#check_id {
+#check--id {
     color: rgb(97, 112, 183);
     font-size: 1rem;
     font-weight: bold;
@@ -83,7 +83,7 @@ section {
     border-radius: 40px;
 }
 
-#check_id:hover {
+#check--id:hover {
     cursor: pointer;
 }
 
@@ -98,7 +98,7 @@ section {
     border-radius: 20px;
 }
 
-#duplicate, #id_null, #pw_null, #pw_not_same, #repeat_pw_null, #name_null {
+#duplicate, #id--null, #pw--null, #pw--not--same, #repeat--pw--null, #name--null {
     display: none;
     justify-content: center;
     align-items: center;
@@ -130,7 +130,7 @@ section {
     text-align: start;
 }
 
-#sign_up_name {
+#sign--up--name {
     margin-left: 10px;
     font-size: medium;
     border: none;
@@ -166,7 +166,7 @@ section {
     width: 300px;
 }
 
-#sign_up_pw {
+#sign--up--pw {
     margin-left: 10px;
     font-size: medium;
     border: none;
@@ -187,7 +187,7 @@ section {
     width: 300px;
 }
 
-#repeat_pw {
+#repeat--pw {
     margin-left: 10px;
     font-size: medium;
     border: none;
@@ -197,7 +197,7 @@ section {
     margin-top: 40px;
 }
 
-#sign_up_btn {
+#sign--up--btn {
     color: white;
     font-size: 1rem;
     font-weight: bold;
@@ -207,7 +207,7 @@ section {
     border-radius: 40px;
 }
 
-#sign_up_btn:hover {
+#sign--up--btn:hover {
     cursor: pointer;
 }
 
