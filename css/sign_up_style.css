@@ -288,7 +288,7 @@ section {
 }
 
 /* 아래 미디어 쿼리는 mobile */
-@media (max-width: 425px) {
+@media (max-width: 768px) {
     .platform--title--logo {
         display: flex;
         justify-content: center;
