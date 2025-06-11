@@ -33,9 +33,11 @@ a:hover {
 }
 
 .inner {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 1200px;
   height: 100%;
-  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -44,6 +46,8 @@ header {
   height: 80px;
   background-color: #fff;
   position: fixed;
+  display: flex;
+  justify-content: center;
   left: 0;
   z-index: 1000;
 }
@@ -87,13 +91,12 @@ section {
   width: 100%;
   height: 100%;
   margin-top: 100px;
-  margin-left: 310px;
+  margin-left: 15px;
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
   padding: 16px;
   gap: 10px;
-
 }
 
 .dropbtn {
@@ -240,4 +243,62 @@ footer {
 
 .pointer {
   cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .program--tag {
+    width: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill--container {
+    margin-left: 35px;
+  }
+
+  .resume--card {
+    width: 200px;
+  }
+
+  .resume--image {
+    max-width: 150px;
+  }
+
+  .program--tag {
+    width: 75px;
+  }
+}
+
+@media (max-width: 425px) {
+  .head {
+    font-size: 0.8rem;
+  }
+
+  .head--main {
+    font-size: 1.6rem;
+  }
+
+  .resume--list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  .resume--card {
+    height: 250px;
+    width: 165px;
+    margin-bottom: 20px;
+    font-size: 0.6rem;
+  }
+
+  .program--tag {
+    width: 35px;
+    height: 10px;
+    font-size: 0.5rem;
+  }
+
+  .resume--image {
+    max-width: 100px;
+  }
 }
