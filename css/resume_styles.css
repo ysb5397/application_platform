@@ -17,6 +17,7 @@ a:link {
 a:visited {
   text-decoration: none;
   color: #3f464d;
+  cursor: pointer;
 }
 
 a:active {
@@ -27,6 +28,7 @@ a:active {
 a:hover {
   text-decoration: none;
   color: #3f464d;
+  cursor: pointer;
 }
 
 header {
