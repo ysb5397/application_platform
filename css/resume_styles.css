@@ -111,19 +111,24 @@ height: 77.5vh;
   padding-top: 10px;
 }
 
+.inner--container {
+  display: flex;
+  flex-direction: column;
+}
+
 .main--title {
   display: flex;
   justify-content: start;
   align-items: center;
   font-size: 18px;
   gap: 2rem;
-  margin-top: 2rem;
   margin-bottom: 10px;
 }
 
 .fa-solid {
   margin: 0 15px;
 }
+
 
 .main--container {
   width: 600px;
@@ -150,6 +155,8 @@ height: 77.5vh;
 .resume--body{
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -347,7 +354,8 @@ font-size: 0.7rem;
 .save--btn--container {
   display: flex;
   justify-content: end;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   padding: 0 30px;
 }
 
