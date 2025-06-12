@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/resume_styles.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    </style>
+</head>
+
+  <body>
+    <header>
+    <div class="inner">
+      <div class="title--container">
+        <div class="platform--logo">
+          <a class="platform--logo--tag" href="http://192.168.0.127:5501/html/list.html">이력서플랫폼</a>
+        </div>
+        <div class="platform--menu">
+          <a class="platform--menu--tag" href="#">홍길동</a>
+          <a class="platform--menu--tag" href="http://192.168.0.127:5501/html/index.html">마이페이지</a>
+          <a class="platform--menu--tag" href="http://192.168.0.127:5501/html/login.html">로그아웃</a>
+        </div>
+      </div>
+    </div>
+    </header>
+
+    <section>
+      <div class="inner">
+        <div class="main">
+          <div class="inner--container">
+            <div class="main--title">
+              <div class="main--title--text1">
+                <div>
+                  <a href="http://192.168.0.127:5501/html/index.html">←</a>
+                </div>
+              </div>
+              <div class="main--title--text2">
+                <a href="http://192.168.0.127:5501/html/index.html">이력서 등록</a>
+              </div>
+            </div>
+            <div class="main--container">
+              <div class="resume--header">
+                <p>홍길동 이력서_2401029</p>
+              </div>
+              <div class="resume--body">
+                <!-- 여기는 프로필 영역 -->
+                <div class="profile--header">
+                  <div class="profile--picture">
+                    <img src="../img/profile_picture.png" alt="">
+                  </div>
+                  <div class="profile--info--container">
+                    <div>
+                      <p id="name" class="">홍길동</p>
+                    </div>
+                    <div class="input--email--container">
+                      <!-- 이메일 영역 -->
+                       <!-- Point
+                        font-awesome에서 가져온 이모지가 안보인다면,
+                        fas 또는 fab라는 클래스를 앞에다가 따로 넣으면 보이게 됩니다.(무료 버전) 
+                       -->
+                      <i class="fas fa-thin fa-envelope"></i>
+                      <input type="text" placeholder="hong@example.com" id="input--email">
+                    </div>
+                    <div class="birth--call--number--container">
+                      <div class="birthday">
+                        <i class="fas fa-thin fa-calendar"></i>
+                        <input type="text" placeholder="0000년생" id="input--birth">
+                      </div>
+                      <div class="phone--number">
+                        <i class="fas fa-light fa-phone"></i>
+                        <input type="text" placeholder="010xxxx4609" minlength="11" maxlength="12" id="input--call">
+                      </div>
+                    </div>
+                    <div>
+                      <i class="fas fa-thin fa-address-book"></i>
+                      <input type="text" placeholder="부산광역시" id="input--address">
+                    </div>
+                  </div>
+                </div>
+                <!-- 여기는 개발 직무 영역 -->
+                <div class="job--container">
+                  <div class="job--container--title">
+                    <p>개발 직무</p>
+                  </div>
+                  <div class="job--tag--list--container">
+                    <ul class="job--tag--list">
+                      <div class="job--tag--container">
+                        
+                        <li class="job--tag"><input type="checkbox">서버 백엔드 개발자</li>
+                      </div>
+                      <div class="job--tag--container">
+                        <li class="job--tag"><input type="checkbox">프론트 엔드 개발자</li>
+                      </div>
+                      <div class="job--tag--container">
+                        
+                        <li class="job--tag"><input type="checkbox">웹 풀스택 개발자</li>
+                      </div>
+                      <div class="job--tag--container">
+                        
+                        <li class="job--tag"><input type="checkbox">IOS 개발자</li>
+                      </div>
+                      <div class="job--tag--container">
+                        
+                        <li class="job--tag"><input type="checkbox">크로스 플랫폼 앱 개발자</li>
+                      </div>
+                      <div class="job--tag--container">
+                        
+                        <li class="job--tag"><input type="checkbox">안드로이드 개발자</li>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+                <!-- 여기는 기술 스택 영역 -->
+                <div class="skill--container">
+                  <div class="skill--container--title">
+                    <p>기술스택(업무 툴/스킬)</p>
+                  </div>
+                  <div class="skill--tag--list--container">
+                    <ul class="skill--tag--list">
+                      <div class="skill--tag--container">
+                        
+                        <li class="skill--tag"><input type="checkbox">Java</li>
+                      </div>
+                      <div class="skill--tag--container">
+                        
+                        <li class="skill--tag"><input type="checkbox">JavaScript</li>
+                      </div>
+                      <div class="skill--tag--container">
+                        
+                        <li class="skill--tag"><input type="checkbox">Spring</li>
+                      </div>
+                      <div class="skill--tag--container">
+                        
+                        <li class="skill--tag"><input type="checkbox">HTML</li>
+                      </div>
+                      <div class="skill--tag--container">
+                        
+                        <li class="skill--tag"><input type="checkbox">jQuery</li>
+                      </div>
+                      <div class="skill--tag--container">
+                        
+                        <li class="skill--tag"><input type="checkbox">MySQL</li>
+                      </div>
+                      <div class="skill--tag--container">
+                        
+                        <li class="skill--tag"><input type="checkbox">React</li>
+                      </div>
+                      <div class="skill--tag--container">
+                        
+                        <li class="skill--tag"><input type="checkbox">jSP</li>
+                      </div>
+                      <div class="skill--tag--container">
+                        
+                        <li class="skill--tag"><input type="checkbox">Vue.js</li>
+                      </div>
+                      <div class="skill--tag--container">
+                        
+                        <li class="skill--tag"><input type="checkbox">Oracle</li>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+                <!-- 여기는 경력 영역 -->
+                <div class="career--container">
+                  <div class="career--container--title">
+                    <p>경력</p>
+                  </div>
+                  <div class="career--tag--list--container">
+                    <ul class="career--tag--list">
+                      <div class="career--tag--container">
+                        <input type="radio" name="career">
+                        <li class="career--tag">신입</li>
+                      </div>
+                      <div class="career--tag--container">
+                        <input type="radio" name="career">
+                        <li class="career--tag">경력</li>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+                <!-- 여기는 저장하기 버튼이 들어가는 곳 -->
+                <div class="save--btn--container">
+                  <button id="save--btn">저장하기</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <footer class="footer">
+        <div>
+          <p id="footer--font">Copyright(c) 홍길동 All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

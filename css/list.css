@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  all: unset;
+}
+
+a:link {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+a:link {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+a:active {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #3f464d;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 1200px;
+  height: 100%;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  z-index: 1000;
+}
+
+.head {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(219, 217, 217);
+  padding: 20px;
+}
+
+.head--main {
+  font-size: 2rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.head--brand {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+section {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.main--container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.skill--container {
+  width: 100%;
+  height: 100%;
+  margin: 16px;
+  margin-top: 100px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.dropbtn {
+  width: 110px;
+  background-color: #ffffff;
+  color: rgb(63, 63, 63);
+  border: 1px solid rgb(63, 63, 63);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 110px;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(63, 63, 63);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropbtn:hover {
+  color: #2d65f2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  border: 1px solid rgb(219, 217, 217);
+  background-color: rgb(255, 255, 255);
+}
+
+ul {
+  list-style: none;
+}
+
+.resume--list {
+  width: 100%;
+  height: 460px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 16 31px;
+}
+
+.resume--card {
+  width: 400px;
+  margin: 0 15px;
+  border: 1px solid rgb(219, 217, 217);
+  border-radius: 1%;
+  padding: 20px;
+}
+
+.resume--card:hover {
+  box-shadow: 1px 1px 20px #ddd;
+}
+
+.resume--image {
+  max-width: 200px;
+  border-radius: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.resume--container {
+  width: 100%;
+  padding: 0.2rem;
+  border-top: 1px solid rgb(219, 217, 217);
+  line-height: normal;
+  font-weight: 500;
+}
+
+.resume--name {
+  font-weight: 900;
+}
+.resume--history {
+  color: gray;
+}
+
+.program {
+  font-size: 0.8rem;
+  color: rgb(26, 25, 25);
+  display: flex;
+  flex-wrap: wrap;
+  height: 10px;
+}
+
+.program--tag {
+  background-color: rgb(219, 203, 250);
+  width: 85px;
+  padding: 7px;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.arrow--container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+#icon {
+  background-color: rgb(241, 239, 239);
+  padding: 15px;
+  margin: 2.5px;
+  border-radius: 2px;
+}
+
+#icon:hover {
+  cursor: pointer;
+  background-color: rgb(83, 115, 218);
+  color: white;
+}
+
+footer {
+  background-color: rgb(248, 248, 248);
+  margin-top: 30px;
+}
+
+.footer--copyright {
+  color: rgb(5, 5, 5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .program--tag {
+    width: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill--container {
+    margin-left: 35px;
+  }
+
+  .resume--card {
+    width: 200px;
+  }
+
+  .resume--image {
+    max-width: 150px;
+  }
+
+  .program--tag {
+    width: 75px;
+  }
+}
+
+@media (max-width: 425px) {
+  .head {
+    font-size: 0.8rem;
+  }
+
+  .head--main {
+    font-size: 1.6rem;
+  }
+
+  .resume--list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  .resume--card {
+    height: 250px;
+    width: 165px;
+    margin-bottom: 20px;
+    font-size: 0.6rem;
+  }
+
+  .program--tag {
+    width: 35px;
+    height: 10px;
+    font-size: 0.5rem;
+  }
+
+  .resume--image {
+    max-width: 100px;
+  }
+}
