@@ -4,29 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>이력서플랫폼 - 로그인</title>
+    <link type="icon" href="/img/favicon.png" rel="icon">
     <link rel="stylesheet" href="./../css/login.css">
+    <script src="/js/login.js"></script>
 </head>
 <body>
     <header>
         <h1>이력서플랫폼</h1>
         <nav>
-            <a href="login.html">로그인</a>
-            <a href="sign_up.html">회원가입</a>
+            <a href="http://192.168.0.127:5501/html/login.html">로그인</a>
+            <a href="http://192.168.0.127:5501/html/sign_up.html">회원가입</a>
         </nav>
     </header>
 
     <main class="mid">
         <h2>SIGN IN</h2> 
         <form>
-            
            <div class="mid-div" id="mid-div-id">아이디<input type="text" id="userid" placeholder="아이디를 입력해주세요."></div>
-            
-                
             <div class="mid-div">패스워드<input type="password" id="password" placeholder="비밀번호를 입력해주세요."></div>
-                
-
         </form>
-        <button type="submit">로그인</button>
+        <button type="submit" onclick="logIn()">로그인</button>
     </main>
 
     <footer>
