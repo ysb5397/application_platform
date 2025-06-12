@@ -3,6 +3,7 @@
 ![image](https://github.com/user-attachments/assets/f634c77d-e45f-44c2-8efa-8c99ea3b858a)
 ![image](https://github.com/user-attachments/assets/5fc94532-3389-47aa-804e-45f46e17be98)
 
+```sql
 -- 데이터베이스 생성 및 사용
 CREATE DATABASE IF NOT EXISTS application_platform;
 USE application_platform;
@@ -73,3 +74,4 @@ INSERT INTO platform (name, title, career, address, skill) VALUES
 ('박민수', 'Web_Developer_20250612', '신입', '대전시 서구', 'Python, SQL'),
 ('정다은', 'System_Admin_20250612', '경력', '인천시 연수구', 'UX/UI, Figma'),
 ('한지훈', 'AI_Researcher_20250612', '신입', '대구시 중구', 'Network Security, Ethical Hacking');
+```
