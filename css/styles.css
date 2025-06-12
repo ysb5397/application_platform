@@ -1,37 +1,49 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-a{
-    all:unset;
-}
+
+
 
 /* Layout */
 .header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(240, 237, 237);
+    height: 6vh;
+    padding: 10px
+}
+
+.out-container {
+  height: 80vh;
+  background-color: aliceblue;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
+  cursor: pointer;
 }
 
 .container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+
+.aa{
+  display: flex;
+  flex: 1;
 }
 
 .back-btn {
-  margin-bottom: 20px;
+  font-weight: bold;
+  margin: 10px;
   color: #444;
   cursor: pointer;
 }
+
 
 .profile-section {
   display: flex;
@@ -40,16 +52,24 @@ a{
 }
 
 .profile-img {
-  border-radius: 50;
-  width: 100px;
-  height: 100px;
+  padding: 25px;
   border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  
+}
+
+.resume-img{
+  display: flex;
+  justify-content: space-between;
 }
 
 .resume-count {
   font-size: 16px;
   margin-bottom: 10px;
 }
+
+
 
 .badge {
   background-color: #5f5cfc;
@@ -59,8 +79,9 @@ a{
   font-size: 12px;
 }
 
+
+
 .register-btn {
-  
   background-color: #5f5cfc;
   color: white;
   border: none;
@@ -70,17 +91,36 @@ a{
   margin-bottom: 20px;
 }
 
+.container-inner {
+  display: flex;
+
+}
+.container-inner-card {
+  flex: 1;
+}
+
+.bb{
+  flex: 1;
+}
+
+.resume-inner2{
+  display: flex;
+  justify-content: space-between;
+}
+
 .resume-card {
+  margin: auto;
   background-color: #f9f9f9;
-  padding: 16px;
+  padding: 20px;
   border-radius: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .resume-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: bold;
 }
 
 .edit-btn {
@@ -108,9 +148,24 @@ a{
   font-size: 14px;
 }
 
-.footer {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 12px;
-  color: #777;
+
+.footer{
+ text-align: center;
+ padding: 40px 0;
+ font-size: 12px;
+ background-color: white;
+ font-weight: bold;
 }
+
+@media (min-width: 320px) and (max-width:2400px) {
+  .media{
+    max-width: 100%;
+    font-size: 100%;
+  }
+}
+
+
+
+
+
+

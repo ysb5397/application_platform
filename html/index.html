@@ -1,66 +1,96 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>이력서플랫폼</title>
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이력서플랫폼</title>
+    <link rel="stylesheet" href="/css/styles.css" />
 </head>
+
 <body>
-  <header class="header">
-    <h1>이력서플랫폼</h1>
-    <nav>
-      <ul class="nav-links">
-        <li>홍길동님</li>
-        <li>마이페이지</li>
-        <li>로그아웃</li>
-      </ul>
-    </nav>
-  </header>
+    <div class="media">
+    <section class="one">
+        <header class="header">
+            <a><h1>이력서플랫폼</h1></a>
+            <nav>
+                <ul class="nav-links">
+                    <a><li>홍길동님</li></a>
+                    <a><li>마이페이지</li></a>
+                    <a href="login.html"><li>로그아웃</li></a>
+                </ul>
+            </nav>
+    </section>
+    </header>
 
-  <main class="container">
-    <div class="back-btn">← 이력서 목록</div>
+    <div class="out-container">
+        <main class="container">
 
-    <div class="profile-section">
-      <img src="img/cloud1.png" alt="프로필 이미지" >
+            <div class="container-in">
+                <div class="back-btn">← 이력서 목록</div>
+            <div class="aa">
+                <div class="container-inner">
+                    <div class="profile-section">
+                        <img src="/img/cloud1.png" alt="프로필 이미지" class="profile-img">
+                    </div>
+                </div>
+
+                <div class="bb">
+                <div class="resume-inner2">
+                    <div class="resume-count">전체<span class="badge">2</span></div>
+                   <a><button class="register-btn">이력서 등록</button></a>
+                </div>
+
+
+
+
+                <!-- Resume Card 1 -->
+                <div class="resume-card">
+                    <div class="resume-header">
+                        <div>홍길동 이력서_2401029</div>
+                        <button class="edit-btn">이력서 수정</button>
+                    </div>
+                    <div class="resume-subtitle">신입</div>
+                    <div class="tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Spring</span>
+                        <span class="tag">JAVA</span>
+                    </div>
+                </div>
+
+
+                <!-- Resume Card 2 -->
+                <div class="resume-card">
+                    <div class="resume-header">
+                        <div>홍길동 이력서_2401029</div>
+                        <button class="edit-btn">이력서 수정</button>
+                    </div>
+                    <div class="resume-subtitle">신입</div>
+                    <div class="tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Spring</span>
+                        <span class="tag">JAVA</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            </main>
     </div>
 
-    <div class="resume-count">전체</div>
 
-    <button class="register-btn">이력서 등록</button>
 
-    <!-- Resume Card 1 -->
-    <div class="resume-card">
-      <div class="resume-header">
-        <div>홍길동 이력서_2401029</div>
-        <button class="edit-btn">이력서 수정</button>
-      </div>
-      <div class="resume-subtitle">신입</div>
-      <div class="tags">
-        <span class="tag">HTML/CSS</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">MySQL</span>
-        <span class="tag">Spring</span>
-        <span class="tag">JAVA</span>
-      </div>
-    </div>
 
-    <!-- Resume Card 2 -->
-    <div class="resume-card">
-      <div class="resume-header">
-        <div>홍길동 이력서_2401029</div>
-        <button class="edit-btn">이력서 수정</button>
-      </div>
-      <div class="resume-subtitle">신입</div>
-      <div class="tags">
-        <span class="tag">HTML/CSS</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">MySQL</span>
-        <span class="tag">Spring</span>
-        <span class="tag">JAVA</span>
-      </div>
-    </div>
 
-    
+    <footer class="footer">
+        Copyright(c)2024홍길동 All rights reserved.
+    </footer>
+
+</div>
 </body>
+
 </html>
